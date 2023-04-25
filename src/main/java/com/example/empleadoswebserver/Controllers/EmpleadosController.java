@@ -39,7 +39,7 @@ public class EmpleadosController {
 
             try{
                 empleado.set_id((long) (Math.random()*100000));
-                CalculoSalarioDia = (empleado.getSalarioPorHora() * empleado.getSalarioPorHora());
+                CalculoSalarioDia = (empleado.getSalarioPorHora() * empleado.getHorasLaborales());
                 CalculoSalarioSemana = CalculoSalarioDia * 5;
                 CalculoSalarioMensual = CalculoSalarioSemana * 4;
                 CalculoSalarioAnual = CalculoSalarioMensual * 12;
